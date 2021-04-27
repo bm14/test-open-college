@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  display: flex;
+  justify-content: center;
+  --white-text: white;
+  --lightGrey-text: #a9a9a9;
+  font-family: "montserrat";
+  overflow: hidden;
+}
+
+.content-wrapper {
+  position: relative;
+  text-align: center;
+  width: 25rem;
+}
+
+.main-img {
+  border-radius: 30%;
+  margin: 1rem 0rem -1rem 0rem;
+  width: 65px;
+  height: 65px;
+}
+.circle {
+  margin-left: -0.5rem;
+}
+
+.header {
+  background: linear-gradient(rgba(221, 85, 43, 0.8), rgba(224, 66, 119, 0.8)),
+    url("../images/mountain.jpg") center/cover no-repeat;
+  border-radius: 5% 5% 0% 0%;
+  color: var(--white-text);
+  padding: 2rem 0rem;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.sub-title {
+  font-size: 0.5rem;
+  letter-spacing: 0.11rem;
+  color: lightgray;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: -0.8rem 0rem -0.5rem 0rem;
+}
+.student-id {
+  border: 1px solid white;
+  border-radius: 66px;
+  padding: 0.5rem;
+  width: 6.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(rgba(189, 55, 99, 0.9), rgba(189, 55, 99, 0.9));
+}
+.curved-border-box {
+  position: absolute;
+  width: 21rem;
+  height: 4rem;
+  border-radius: 0.875rem;
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  z-index: 5;
+  margin: -2.5rem auto 0rem 1rem;
+}
+
+.curved-border-box h4 {
+  color: var(--white-text);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: -0.8rem;
+}
+
+.border {
+  border-left: 1px solid var(--lightGrey-text);
+}
+
+.curved-border-box h6 {
+  color: var(--lightGrey-text);
+  font-size: 0.475rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.main-content-wrapper {
+  padding: 2rem;
+  background-color: #202020;
+  text-align: left;
+  z-index: -1;
+}
+
+.personal-details h5 {
+  font-size: 0.475rem;
+  letter-spacing: 0.1rem;
+  color: var(--lightGrey-text);
+  text-transform: uppercase;
+  margin-bottom: -0.5rem;
+}
+
+.personal-details p {
+  color: var(--white-text);
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+.course-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25rem;
+  background-color: #333333;
+  padding: 0.5rem 0rem 0rem 1rem;
+  margin-left: -2rem;
+}
+
+.current-course {
+  margin: -1rem 0rem 0rem 1.5rem;
+  padding-top: 0.5rem;
+}
+.course-chevron {
+  margin-right: 1.5rem;
+  padding-top: 1rem;
+}
+
+.current-course h4 {
+  color: var(--white-text);
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: -1rem;
+}
+
+.current-course h5 {
+  color: var(--lightGrey-text);
+  font-weight: 500;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+.photos-section {
+  padding: 0.1px 0.1px 0.1px 2rem;
+  width: 25rem;
+  height: 15rem;
+  margin: 0.5rem 0rem 0rem -2rem;
+  background-color: #333333;
+}
+.photo-chevron-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -3rem;
+  width: 20rem;
+}
+.photo-title {
+  background-color: #333333;
+  color: var(--white-text);
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.chevron-down {
+  transform: rotate(90deg);
+  color: var(--lightGrey-text);
+}
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(2, 80px);
+  grid-gap: 0.5rem;
+  justify-items: stretch;
+  align-items: stretch;
+  width: 20rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.grid-1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  border-radius: 0.5rem;
+}
+
+.grid-2 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  border-radius: 0.5rem;
+}
+
+.grid-3 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  border-radius: 0.5rem;
+}
+
+.grid-4 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  border-radius: 0.5rem;
+  border: 1px solid #333333;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("../images/myphoto-4.jpg") center/cover no-repeat;
+}
+.arrow-overlay {
+  color: var(--white-text);
+  z-index: 500;
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+}
+.chevron {
+  color: var(--lightGrey-text);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+  height: 10px;
+  width: 10px;
+  color: white;
+}
+.close-btn:hover {
+  color: lightgrey;
+}
+.hat-img {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+  margin: 0.7rem -3rem 0rem 1rem;
+  display: block;
+}
